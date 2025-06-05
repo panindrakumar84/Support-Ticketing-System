@@ -8,7 +8,6 @@ type AuthPayload = {
 export async function getCurrentUser() {
   try {
     const token = await getAuthCookie();
-    console.log(token);
 
     if (!token) return null;
 
